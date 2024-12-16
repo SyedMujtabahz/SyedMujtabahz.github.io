@@ -52,15 +52,18 @@ body.glass-theme {
 h1, h2 {
   color: #00ffb3;
   font-family: 'Roboto Mono', monospace;
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
 }
 
 p, ul li {
   color: #e6e6e6;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  overflow-wrap: break-word;
 }
 
 .subtitle {
   color: #72c2ff;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
 }
 
 /* Lists */
@@ -74,13 +77,12 @@ p, ul li {
   border-radius: 12px;
   padding: 10px 15px;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .skills-list li:hover, .experience-list li:hover, .education-list li:hover {
   background: rgba(0, 255, 255, 0.2);
-  /* transform: scale(1.05); */
 }
 
 /* Footer */
@@ -92,7 +94,7 @@ p, ul li {
 
 /* Typewriter Effect */
 .typewriter {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   overflow: hidden;
   border-right: 2px solid #fff;
   white-space: nowrap;
@@ -111,13 +113,31 @@ p, ul li {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .cv-container {
+    width: 95%;
+  }
+
+  .glass-section {
+    padding: 15px;
+  }
+
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
-  p, li { font-size: 0.9rem; }
-  .glass-section { padding: 15px; }
 }
 
 @media (max-width: 480px) {
+  .glass-section {
+    padding: 10px;
+  }
+
   h1 { font-size: 1.5rem; }
-  .glass-section { padding: 10px; }
+  h2 { font-size: 1.2rem; }
+
+  .subtitle, p, ul li {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
 }
