@@ -13,3 +13,23 @@ function scrollCarousel(direction) {
         behavior: 'smooth'
     });
 }
+
+// Get the button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show or hide the button based on scroll
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 350) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// Scroll back to the top smoothly when the button is clicked
+backToTopButton.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
