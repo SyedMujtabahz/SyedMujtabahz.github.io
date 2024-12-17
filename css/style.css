@@ -44,9 +44,13 @@ body.glass-theme {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.glass-section:hover {
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4), 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
 .glass-section-small {
   margin: auto;
-  width: 30%;
+  width: 20%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 100px;
@@ -55,8 +59,9 @@ body.glass-theme {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.glass-section:hover {
-  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4), 0 0 15px rgba(0, 255, 255, 0.6);
+.glass-section-small:hover{
+  width: 30%;
+  transition-duration: 0.3s;
 }
 
 .center-Container {
@@ -106,6 +111,7 @@ p1 {
   margin-bottom: 10px;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   transition: transform 0.3s ease, background 0.3s ease;
+  /* height: 3em; */
 }
 
 .skills-list li:hover, .experience-list li:hover, .education-list li:hover {
@@ -495,6 +501,10 @@ body{
     position: absolute;
     display: block;
     list-style: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%; /* Ensures the shape remains circular */
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
