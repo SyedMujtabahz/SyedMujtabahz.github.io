@@ -305,7 +305,19 @@ p1 {
   color: #ffffff;
   font-size: 1em;
   transition: all 0.3s ease;
-  float: right;
+  display: flex; /* Use flexbox for better layout management */
+  flex-wrap: wrap; /* Allow icons to wrap onto the next line if necessary */
+  justify-content: flex-end; /* Align icons to the right */
+  gap: 5px; /* Add space between icons */
+  max-width: 100%; /* Ensure it doesn't exceed the parent's width */
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.tech-icons-exp i {
+  flex: 0 0 auto; /* Prevent icons from shrinking or stretching */
+  font-size: 1.2em; /* Adjust icon size for readability */
+  padding: 2px;
 }
 
 /* Back to Top Button styles */
