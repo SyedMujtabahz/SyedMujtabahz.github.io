@@ -50,7 +50,8 @@ body.glass-theme {
 
 .glass-section-small {
   margin: auto;
-  width: 35%;
+  margin-bottom: 20px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 100px;
@@ -61,7 +62,7 @@ body.glass-theme {
 }
 
 .glass-section-small:hover{
-  width: 50%;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4), 0 0 15px rgba(0, 255, 255, 0.6);
   /* padding:  10px; */
   transition-duration: 0.3s;
 }
@@ -181,10 +182,6 @@ p1 {
     padding: 15px;
   }
 
-.glass-section-small{
-  width: 50%;
-}
-
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
 }
@@ -192,10 +189,6 @@ p1 {
 @media (max-width: 480px) {
   .glass-section {
     padding: 10px;
-  }
-
-  .glass-section-small{
-    width: 100%;
   }
 
   h1 { font-size: 1.5rem; }
@@ -303,8 +296,7 @@ p1 {
 .tech-icons-link :hover{
   
   color: #a5ffffcc;
-  transform: scale(2);
-  transition: 0.5s;
+  transform: scale(1.5);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -344,6 +336,34 @@ p1 {
   background-color: #00ffffcc;
   transform: scale(1.25);
   transition: 0.75f;
+}
+
+/* Sticky Footer */
+.sticky-footer {
+  position: fixed;
+  margin: 0;
+  bottom: 0;
+  width: 52.5%;
+  left: 50%; /* Position it halfway across the viewport */
+  transform: translateX(-50%); /* Offset by half its width for perfect centering */
+  background: rgba(255, 255, 255, 0.1); /* Glass effect background */
+  backdrop-filter: blur(10px); /* Optional for the glass effect */
+  /* padding: 10px 20px; */
+  text-align: center;
+  z-index: 1000; /* Ensures it stays on top */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for visual separation */
+  border-radius: 100px; /* Optional for rounded edges */
+}
+
+.sticky-footer a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white; /* Adjust based on your theme */
+  transition: color 0.3s ease;
+}
+
+.sticky-footer a:hover {
+  color: #00aaff; /* Change color on hover */
 }
 
 /* Wave Pattern BG */
