@@ -13,7 +13,7 @@ function scrollCarousel(direction) {
         behavior: 'smooth'
     });
 }
-
+//Back to Top Button
 // Get the button
 const backToTopButton = document.getElementById("backToTop");
 
