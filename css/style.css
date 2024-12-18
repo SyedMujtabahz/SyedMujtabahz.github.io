@@ -91,7 +91,7 @@ p, ul li {
 }
 
 p1 {
-  color: #c7d4d6;
+  color: #ffffff;
   /* font-size: clamp(0.7rem, 1.5/2vw, 0.5rem); */
   font-size: 13px;
   overflow-wrap: break-word;
@@ -307,6 +307,13 @@ p1 {
   transition: 0.5s;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.tech-icons-exp{
+  color: #ffffff;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  float: right;
 }
 
 /* Back to Top Button styles */
