@@ -595,3 +595,11 @@ body{
     }
 
 }
+
+/* fontawesome icon css */
+.fa-brands, .fas {
+  display: inline-block;      /* Ensures icons behave like inline elements */
+  vertical-align: middle;     /* Aligns the icon with the middle of the text */
+  margin-right: 8px;          /* Adds spacing between the icon and the text */
+  font-size: 16px;            /* Adjusts icon size (optional) */
+}
